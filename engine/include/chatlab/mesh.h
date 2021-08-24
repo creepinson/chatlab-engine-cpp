@@ -6,6 +6,8 @@
 #include <stdint.h>
 #include <vector>
 
+#include <chatlab/transform.h>
+
 struct DrawDetails {
     DrawDetails(uint32_t v, uint32_t e) {
         vao = v;
@@ -17,8 +19,20 @@ struct DrawDetails {
 };
 
 DrawDetails uploadMesh(std::vector<glm::vec3> &vertices,
-                              std::vector<uint32_t> &indices);
+                       std::vector<uint32_t> &indices);
 
 void unloadMesh(std::vector<DrawDetails> &drawDetails);
 
-void draw(const std::vector<DrawDetails> &drawDetails);
+void drawMesh(const std::vector<DrawDetails> &drawDetails);
+
+class Mesh {
+public:
+    Mesh();
+    ~Mesh();
+    std::vector<DrawDetails> details;
+    std::vector<glm::vec3> vertices;
+    std::vector<uint32_t> indices;
+    Transform *transform;
+
+    void draw();
+};

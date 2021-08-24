@@ -16,4 +16,7 @@ public:
     glm::mat4 getProjectionMatrix();
     glm::mat4 getViewMatrix();
     Transform *transform;
+    glm::vec3 forward() const;
+    glm::vec3 right() const;
+    glm::vec3 up() const;
 };

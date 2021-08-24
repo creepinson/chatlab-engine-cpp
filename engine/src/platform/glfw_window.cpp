@@ -1,4 +1,6 @@
+#include <chatlab/engine.h>
 #include <chatlab/platform/glfw_window.h>
+#include <functional>
 #include <stdexcept>
 
 GLFWWindow::GLFWWindow() { window = nullptr; }
@@ -25,12 +27,12 @@ void GLFWWindow::init() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+    glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
 
     // convert title to c string
     const char *titleCStr = title.c_str();
 
-    window = glfwCreateWindow(800, 600, titleCStr, nullptr, nullptr);
+    window = glfwCreateWindow(600, 600, titleCStr, nullptr, nullptr);
 
     if (window == nullptr) {
         throw std::runtime_error("Failed to create GLFW window");
@@ -46,12 +48,17 @@ void GLFWWindow::init() {
         close();
     }
 
-    glViewport(0, 0, 800, 600);
+    glfwSetCursorPosCallback(window, Engine::cursorPositionCallback);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glEnable(GL_DEPTH_TEST);
 }
 
 bool GLFWWindow::update() {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    int width, height;
+    glfwGetWindowSize(this->window, &width, &height);
+    this->setSize(width, height);
 
     return glfwWindowShouldClose(window);
 }
@@ -64,4 +71,11 @@ void GLFWWindow::close() {
 void GLFWWindow::postUpdate() {
     glfwSwapBuffers(window);
     glfwPollEvents();
+}
+
+void GLFWWindow::setSize(int width, int height) {
+    this->width = width;
+    this->height = height;
+    glfwGetWindowSize(this->window, &width, &height);
+    glViewport(0, 0, width, height);
 }

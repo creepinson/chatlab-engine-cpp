@@ -2,24 +2,28 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <chatlab/platform/window.h>
 #include <string>
 
-class GLFWWindow : public Window {
+class GLFWWindow {
 public:
     GLFWWindow();
-    virtual void init() override;
-    virtual bool update() override;
-    virtual void postUpdate() override;
-    virtual void setTitle(std::string title) override;
-    virtual std::string getTitle() override;
-    virtual void close() override;
+    virtual void init();
+    virtual bool update();
+    virtual void postUpdate();
+    virtual void setTitle(std::string title);
+    virtual std::string getTitle();
+    virtual void close();
+    GLFWwindow *window;
+    virtual void setSize(int width, int height);
+    // size
+    int width;
+    int height;
 
 private:
-    GLFWwindow *window;
     // title
     std::string title;
 
     // error callback
     static void error_callback(int error, const char *description);
+    void windowSizeCallback(GLFWwindow *window, int width, int height);
 };

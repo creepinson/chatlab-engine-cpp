@@ -38,10 +38,19 @@ void unloadMesh(std::vector<DrawDetails> &drawDetails) {
     drawDetails.clear();
 }
 
-void draw(const std::vector<DrawDetails> &drawDetails) {
+void drawMesh(const std::vector<DrawDetails> &drawDetails) {
     for (auto &details : drawDetails) {
         glBindVertexArray(details.vao);
         glDrawElements(GL_TRIANGLES, details.numElements, GL_UNSIGNED_INT, 0);
     }
     glBindVertexArray(0);
 }
+
+Mesh::Mesh() {
+    // create a transform for the mesh
+    transform = new Transform();
+}
+
+Mesh::~Mesh() { unloadMesh(details); }
+
+void Mesh::draw() { drawMesh(details); }
