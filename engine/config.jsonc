@@ -1,0 +1,6 @@
+{
+    "shader": {
+        "vertex": "resources/shaders/default.vert.spv",
+        "fragment": "resources/shaders/default.frag.spv"
+    }
+}

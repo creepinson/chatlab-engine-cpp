@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glew"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\..\..\usr\share\imgui\;CMake Files\libs\;CMake Files\libs\glfw\;CMake Files\libs\glfw\CMake\;CMake Files\libs\glfw\src\;CMake Files\libs\glfw\docs\;CMake Files\libs\glew\;CMake Files\libs\json\;CMake Files\libs\json\cmake\;CMake Files\libs\glm\;CMake Files\libs\glm\glm\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static">
+				<Option output="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glew/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 libglew_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_static/fast">
+				<Option output="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add directory="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glew/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 libglew_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_shared">
+				<Option output="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/lib/libglew-sharedd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_BUILD"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glew/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 libglew_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libglew_shared/fast">
+				<Option output="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/lib/libglew-sharedd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_BUILD"/>
+					<Add option="-DGLEW_NO_GLU"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glew/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 libglew_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/cmake-build-debug/libs/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glew/src/glew.c">
+			<Option target="libglew_static"/>
+			<Option target="libglew_shared"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/../../../../../../../../usr/share/imgui/imgui-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\share\imgui\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/../../../../../../../../usr/share/imgui/imgui-targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\share\imgui\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/../../../../../../../../usr/share/imgui/imgui-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\share\imgui\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glfw\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\libs\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\libs\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\libs\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glfw\src\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\libs\glfw\src\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/docs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glfw\docs\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glfw/docs/Doxyfile.in">
+			<Option virtualFolder="CMake Files\libs\glfw\docs\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glew\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glew/GeneratePkgConfig.cmake">
+			<Option virtualFolder="CMake Files\libs\glew\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/json/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\json\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/json/cmake/config.cmake.in">
+			<Option virtualFolder="CMake Files\libs\json\cmake\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/json/cmake/nlohmann_jsonConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\libs\json\cmake\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/json/cmake/pkg-config.pc.in">
+			<Option virtualFolder="CMake Files\libs\json\cmake\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glm\"/>
+		</Unit>
+		<Unit filename="/run/media/theo/TheoData/Essentials/Projects/Dev/chatlab-cpp/libs/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\glm\glm\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

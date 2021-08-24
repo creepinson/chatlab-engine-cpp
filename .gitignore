@@ -1,0 +1,15 @@
+.env
+*.log*
+.DS_Store
+CMakeCache.txt
+CMakeFiles
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+build
+config.yaml
+*.cmake
+Makefile
+/Chatlab
+*.spv
+.idea
+.vscode/sftp.json
